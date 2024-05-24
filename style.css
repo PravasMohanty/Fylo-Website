@@ -1,0 +1,639 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+:root{
+    --Light-gray:hsl(0, 0%, 75%);
+    --bright-blue: hsl(224, 93%, 58%);
+    --moderate-cyan: hsl(170, 45%, 43%);
+    --Light-grayish-blue: hsl(240, 75%, 98%);
+    --Very-Dark-Blue: hsl(243, 87%, 12%);
+    --Desaturated-Blue: hsl(238, 22%, 44%);
+}
+
+body{
+    font-family: 'Open Sans',sans-serif ;
+    font-size: 16px;
+    overflow-x: hidden;
+}
+
+
+.header-container{
+    width: 100vw;
+    display: flex;
+    /* background-color: blueviolet; */
+    justify-content: center;
+    align-items: center;
+    padding: 2.7vw 3vw;
+    font-family: 'Raleway',sans-serif ;
+    margin: 0.5rem 0rem 6rem;
+}
+
+.header-content{
+    width: 100%;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;    
+    /* background-color: red; */
+    font-size: 1.2rem
+}
+.main-logo{
+    /* height: 20vw; */
+    width: 25vw;
+}
+.logo{
+    /* height: 20vw; */
+    width: 25vw; 
+}
+
+.header-options{
+   display: flex;
+   gap: 1rem;
+}
+.header-opt{
+    color: black;
+    background-color: #fff;
+}
+
+@media screen and (min-width:768px) {
+    .header-content{
+        font-weight: 450;
+    }
+
+    .header-options{
+        /* margin: 2rem; */
+        display: flex;
+        gap: 4rem;
+     }
+
+     .main-logo{
+        /* height: 20vw; */
+        width: 10vw;}
+
+    .logo{
+            /* height: 20vw; */
+            width: 10vw; 
+    }
+}
+
+.hero-sec{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-img{
+    width: 93%;
+    object-fit: contain;
+}
+
+.hero-content{
+    display: flex;
+    justify-content: center;
+    flex-direction: column-reverse;
+    padding: 1rem;    
+}
+
+.hero-title{
+    padding:0 2rem;
+    padding-right: 0;
+    font-weight: 750;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.hero-text{
+    text-align: center;
+    padding: 0 1rem;
+    font-size: 1rem;
+    font-family: "Open Sans";
+    /* padding-right:2rem; */
+    /* font-weight: 500; */
+}
+
+.login{
+    padding:2rem 1rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.email-info{
+    /* width: 55% ; */
+    padding: 0.75rem 2rem 0.75em;
+    font-size: 1rem;
+    /* font-weight: 600; */
+    /* height: 3rem; */
+    border-radius: 5px;
+    border: 1px solid black;
+    outline: none;
+    }
+
+.start-button{
+        font-size: 0.9rem;
+        border-radius: 5px;
+        height: 100%;
+        background-color: var(--bright-blue);
+        border: none;
+        padding: 0.75rem;
+        color: white;
+        font-weight: 700;
+        width: 100%;
+        box-shadow: 1px 1px 50px var(--Light-gray);
+        transition: 0.2s;    
+}
+
+
+.start-button:hover{
+        background-color: hsl(224, 100%, 65%);
+    
+}
+
+@media screen and (min-width:768px) {
+    .hero-content{
+        flex-direction: row;
+    }
+
+    .login{
+        flex-direction: row;
+    }
+
+    .hero-title{
+        font-size: 2.7rem;
+        text-align: start;
+        font-family: 'Raleway';
+        padding-left: 0;
+
+    }
+    .left-hero{
+        display: flex;
+        flex-direction: column;
+        gap: 1.8rem;
+        padding-right: 14rem;
+        padding-left: 2.5rem;
+    }
+    .hero-text{
+        font-size: 1.2rem;
+        text-align: left;
+        /* padding-right:5rem ; */
+        padding-left: 0;
+    }
+
+    .email-info{
+        width: 55%;
+    }
+
+    .start-button{
+        width: 30%;
+    }
+}
+
+::placeholder{
+    color: var(--Light-gray);
+    font-weight: 600;
+}
+
+.motivation-container{
+    background-color: var(--Light-grayish-blue);
+}
+
+.motive-right{
+    width: 100%;
+}
+
+.motivation-pic{
+    width: 100%;
+}
+
+.top-flap{
+    width: 100%;
+    /* object-fit: cover; */
+}
+
+.motivation-content{
+    display: flex;
+    flex-direction: column-reverse;
+    padding: 1.5rem 1.2rem 3rem;
+}
+
+.motivation-title{
+    font-size: 0.5rem;
+    text-align: center;
+}
+
+.motive-left{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.filler-text{
+    font-weight: 500;
+    color: hsl(0, 0%, 50%);
+    font-size: 0.95rem;
+}
+
+.hyperlink{
+    display: flex;
+    justify-content: center;
+    font-size: 0.94rem;
+    gap: 0.5rem;
+    border-bottom: 3px solid var(--moderate-cyan);
+    padding: 0.5rem 0;
+    color: var(--moderate-cyan);
+    font-weight: 600;
+    background-color:var(--Light-grayish-blue);
+    transition: 0.2s;
+}
+
+.redirect{
+    height: 1.2rem;
+    width: 1.2rem;
+}
+
+.link-container{
+    padding:2rem 6rem;
+}
+
+.motivat-top{
+    position: relative;
+    top: 5px;
+}
+
+.ceo-data{
+    display: flex ;
+    gap: 0.7rem;
+    /* background-color: blanchedalmond; */
+}
+
+.founder-container{
+    /* background-color: rgb(235, 78, 78); */
+    /* width: 52%; */
+    background-color: white;
+    box-shadow: 5px 5px 20px hsl(240, 75%, 96%);;
+    padding: 1.5rem;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin: 0 1.7rem 1.7rem;
+}
+.quotes{
+    height: 1.3rem;
+    width: 1.3rem;
+}
+
+.testimonial-text{
+    font-size: 0.75rem;
+}
+
+.profile-pic{
+    height: 2rem;
+    width: 2rem;
+}
+
+.avatar{
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+}
+
+.prof-name{
+    font-size: 0.75rem;
+    font-weight: 700rem;
+}
+
+.designation{
+    font-size: 0.5rem;
+    /* font-weight: 600; */
+}
+
+.info{
+    display: flex;
+    flex-direction: column;
+    gap: 0.1rem;
+    font-weight: 600;
+}
+
+.hyperlink:hover{
+    border-bottom: 2px solid hsl(170, 62%, 62%) ;
+    color: hsl(170, 62%, 62%) ;
+}
+
+.hyperlink:hover, .redirect{
+    opacity: 0.6;
+}
+
+.pc{
+    display: none;
+}
+@media screen and (min-width:768px) {
+    .motivation-content{
+        flex-direction: row;
+    }
+
+    .pc{
+        display: block;
+    }
+    .mob{
+        display: none;
+    }
+
+    .motivation-title{
+        font-size: 1.2rem;
+        padding: 0;
+        text-align: left;
+    }
+
+    .motive-left{
+        padding: 4rem;
+        width: 55%;
+    }
+
+    .motive-right{
+        width: 45%;
+        padding: 3rem;
+    }
+    .filler-text{
+        color: rgb(46, 46, 46);
+        font-size: 1rem;
+    }
+
+    .motivation-text{
+        padding-right: 8.9rem;
+    }
+    .link-container{
+    display: flex;
+    padding: 0;
+    width: 10.5rem;
+
+    }
+
+    .hyperlink{
+        gap: 0.3rem;
+        justify-content: start;
+    }
+
+    .founder-container{
+        margin: 0;
+        width: 52%;
+    }
+
+    .testimonial-text{
+        line-height: 1.6rem;
+        font-size: 0.89rem;
+        font-weight: 550;
+    }
+
+    .prof-name{
+        font-size: 0.78;
+        font-weight: 750;
+    }
+
+    .designation{
+        font-size: 0.625rem;
+    }
+}
+
+.access-container{
+    width: 100%;
+    color: white;
+    background-color: var(--Desaturated-Blue);
+    /* height: 27rem; */
+    padding: 4rem 3rem ;
+    text-align: center;
+}
+
+.access-header{
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.access-text{
+    font-size: 0.95rem;
+    font-weight: 400;
+}
+
+.access-content{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.access-left{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.access-right{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.email-start{
+    padding: 0.75rem 1rem 0.75em;
+    font-size: 0.88rem;
+    box-shadow: 2px 2px 4px hsl(240, 25%, 35%);
+    
+    border-radius: 5px;
+    border: none;
+    outline: none;
+}
+
+.new-button{
+    font-size: 0.9rem;
+        border-radius: 5px;
+        height: 100%;
+        background-color: var(--bright-blue);
+        border: none;
+        padding: 0.75rem;
+        color: white;
+        font-weight: 750;
+        width: 100%;
+        box-shadow: 2px 2px 4px hsl(240, 25%, 35%);
+        transition: 0.2s;
+}
+
+.new-button:hover{
+    background-color: hsl(224, 100%, 65%);
+}
+
+@media screen and (min-width:768px) {
+    .access-content{
+        flex-direction: row;
+        gap: 17rem;
+    }
+
+    
+
+    .access-left{
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        width: 42rem;
+        text-align: left;
+        padding: 2rem;
+    }
+
+    .access-header{
+        font-size: 1.7rem;
+        font-weight: 650;
+    }
+
+    .access-text{
+        padding-right: 3rem;
+        font-size: 1.15rem;
+        font-weight: 300;
+    }
+
+    .access-right{
+        padding-top: 1rem;
+        width: 30%;
+    }
+
+    .new-button{
+        width: 15rem;
+        height: 3rem;
+    }
+
+    .email-start{
+        height: 3rem;
+
+    }
+}
+
+.footer-container{
+    width: 100%;
+    background-color: var(--Very-Dark-Blue);
+    /* height: 33rem; */
+    padding: 1.5rem 1.2rem;
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    color: white;
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    width: 93%;
+    
+}
+
+.details{
+    display: flex;
+    gap: 1rem;
+}
+
+.credentials{
+    width: 20rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 2rem;
+}
+
+.footer-logo{
+    width: 12rem;
+}
+
+li{
+    list-style-type: none;
+    /* font-size: 1.3rem; */
+    font-weight: 350;
+    padding: 0.7rem;
+}
+
+.further-links{
+    color: #fff;
+}
+
+.option-grid{
+    padding: 1.7rem;
+    display: flex;
+    flex-direction: column;
+    font-size: 1.1rem;
+}
+
+.social-handles{
+    display: flex;
+    gap: 1.12rem;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem;
+    justify-self: center;
+}
+
+.icon{
+    height: 1.5rem;
+    width: 1.5rem;
+}
+
+.facebook{
+    height: 2.2rem;
+    width: 2.2rem;
+    border: 1px solid white;
+    border-radius: 50%;
+    padding: 0.5rem;
+}
+
+.grid-opt-contaier:nth-child(1){
+    margin-bottom: 3rem;
+}
+
+@media screen and (min-width:768px) {
+    
+
+    .option-grid{
+        padding-top: 6.25rem;
+        flex-direction: row;
+        gap: 8rem;
+
+    }
+
+    .further-links{
+        width: 10rem;
+    }
+
+    .end-credits{
+        gap: 0;
+        justify-content: space-around;
+        padding: 0.5rem;
+    }
+
+    .end-link{
+        display: inline;
+        width: 10rem;
+        font-weight: 700;
+    }
+}
+
+.end-credits, a{
+    background-color: var(--Very-Dark-Blue);
+    color: #fff;
+    display: flex ;
+    justify-content: center;
+    width: 100%;
+}
+
+.attribution{
+    display: flex;
+    justify-content: center;
+    gap: 0;
+}
+
+@media screen and (min-width:1100px) {
+footer{
+    flex-direction: row;
+    gap: 6rem;
+}}
+
